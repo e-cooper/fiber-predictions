@@ -1,0 +1,194 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -32px;
+}
+
+body, footer {
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #eee;
+}
+
+.footer, .push {
+  height: 35px;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  clear: both;
+}
+
+#decorbar {
+  margin: 0 0 50px 0;
+}
+
+.decor {
+  width: 25%;
+  height: 5px;
+  display: block;
+  float: left;
+  background-color: #000;
+}
+
+.blue {
+  background-color: #3369E8;
+}
+
+.red {
+  background-color: #D50F25;
+}
+
+.yellow {
+  background-color: #EEB211;
+}
+
+.green {
+  background-color: #009925;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #444;
+  font-size: 38px;
+  padding: 30px 0 0 0;
+  margin: 0;
+}
+
+.subtext {
+  display: inline-block;
+  color: #666;
+  font-size: 11px;
+  margin: 30px 0;
+  max-width: 500px;
+  line-height: 200%;
+}
+
+.subtext a {
+  font-weight: bold;
+  color: #4180ed;
+}
+
+.subtext.note {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.subtext.description {
+  display: inline-block;
+  margin: 30px auto 50px auto;
+  text-align: left;
+  max-width: 1100px;
+}
+
+span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.chart-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #555;
+  font-size: 18px;
+}
+
+.charts {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chart {
+  margin-top: 40px;
+}
+
+.prediction-chart {
+  max-width: 800px;
+  display: inline-block;
+}
+
+.breaker {
+  display: block;
+  width: 0;
+  clear: both;
+}
+
+.graph {
+  display: inline-block;
+}
+
+.bar-chart .tick line {
+  opacity: 0.2;
+}
+
+.kconly-bar-chart .tick line {
+  opacity: 0.2;
+}
+
+.bar rect {
+  fill: #3369E8;
+}
+
+.bar.first-bar rect {
+  fill: #D50F25;
+}
+
+.bar text.value {
+  fill: white;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.area {
+  fill: #333;
+  stroke-width: 0;
+  opacity: 0.1;
+}
+
+.line {
+  fill: none;
+  stroke: #3369E8;
+  stroke-width: 1.5px;
+}
+
+.line.important  {
+  stroke: red;
+}
+
+circle.monthVal {
+  fill: #D50F25;
+}
+
+.grid line {
+  stroke: lightgrey;
+}
+
+.grid .minor line {
+  stroke-opacity: 0.4;
+}
+
+.grid path {
+  stroke-width: 0;
+}

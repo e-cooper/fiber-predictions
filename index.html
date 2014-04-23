@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Author: Eli Cooper
+  Made for LMC 3705 Spring 2014 - Project 3 -->
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='main.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h2 class="title">Google Fiber Predictions</h2>
+      <p class="subtext">What did Kansas City look like before <a href="https://fiber.google.com/about/" target="_blank">Google Fiber</a> and what does it look like now? 
+        See how the other potential cities might benefit.
+      </p>
+    </header>
+    <div id="decorbar">
+      <div class="decor blue"></div>
+      <div class="decor red"></div>
+      <div class="decor yellow"></div>
+      <div class="decor green"></div>
+    </div>
+
+    <div class="charts">
+      <h2 class="chart-title"><span>All Cities</span></h2>
+      <h2 class="chart-title">Avg. Download Speeds of Potential Google Fiber Cities vs Kansas City (Jun '12 - Feb '14)</h2>
+      <div class="chart area-charts"></div>
+      <p class="subtext description">
+        These charts show us the average download (Mbps) of internet in <span>Kansas City</span> as well as <span>Atlanta, Nashville, 
+        Charlotte, Raleigh-Durham*, San Antonio, Salt Lake City, Portland, and San Jose</span> for the past twenty (20) months. 
+        Google Fiber began the process of connecting homes to their network in Kansas City on 
+        <a href="http://googlefiberblog.blogspot.com/2012/11/google-fiber-installations-kick-off.html" target="_blank">Nov. 13, 2012</a> 
+        and shortly after, the city experienced a steady increase in average internet speeds. With Google's 
+        <a href="https://fiber.google.com/newcities/" target="_blank">latest announcement</a> of other cities as potential expansion areas, 
+        these graphs give us an idea of how these municipalities might benefit as a whole.
+        <br/>
+        <span class="subtext description note">* Raleigh-Durham is the average speed of both Raleigh, NC and Durham, NC for the given month</span>
+      </p>
+      <h2 class="chart-title"><span>All Cities</span></h2>
+      <h2 class="chart-title">Percent Increase in Avg. Download Speeds (Jun '12 - Feb '14) <sup>&dagger;</sup></h2>
+      <div class="chart bar-chart"></div>
+      <p class="subtext description">
+        This chart shows us the percent of increase in internet speed for each of the previous cities over the same time period. While each city has had a decent increase
+        since the initial month of June 2012, <span>Kansas City has clearly had a drastic improvement due to Google Fiber</span>. After breaking this larger increase into smaller bits,
+        we can see how to use this data to predict the impact Google Fiber would have if the other cities were brought into the fold.
+        <br/>
+        <span class="subtext description note">
+          &dagger; Percent of increase as compared to Jun '12 and the combined average of Dec '13 - Feb '14 to account for the recent variability of speed in Kansas City
+        </span>
+      </p>
+      <h2 class="chart-title"><span>Kansas City</span></h2>
+      <h2 class="chart-title">Percent Increase in Avg. Download Speeds following Google Fiber Availability (from Nov '12)</h2>
+      <div class="chart kconly-bar-chart"></div>
+      <p class="subtext description">
+        This chart further breaks down the improvement <span>Kansas City</span> has seen in internet download speeds into three, six, and twelve month intervals. Underestandably, the increase has
+        grown with the passage of time, but <span>even the three month percentage increase for Kansas City following Google Fiber availability is substantial when compared to the 
+        improvement other cities have seen with twenty months.</span> Using this information, we can finally make a prediction about how internet might improve over the same period of 
+        time for the other cities on the list.
+      </p>
+      <h2 class="chart-title"><span>All Cities except Kansas City</span></h2>
+      <h2 class="chart-title">Prediction for Avg. Download Speeds following Google Fiber Availability (Feb '14 - Feb '15)</h2>
+      <div class="chart prediction-chart"></div>
+      <p class="subtext description">
+        This chart applies the data gathered from Kansas City's increase and applies it to the other cities in the list. <span>Here, we see what the avg. download speed currently is for Feb. '14 
+        and what it might look like after a 3-month, 6-month, and 12-month time interval.</span> It's hard to say how precise this mapping would be, but it offers an intrigueing glimpse at the 
+        future according to what we already know. 
+      </p>
+    </div>
+
+    <script src="charts.js"></script>
+
+    <div class="push"></div>
+  </div>
+
+  <footer>© Eli Cooper</footer>
+</body>
+</html>
