@@ -71,10 +71,10 @@ footer {
 .subtext {
   display: inline-block;
   color: #666;
-  font-size: 13px;
+  font-size: 12px;
   margin: 30px 0;
   max-width: 500px;
-  line-height: 200%;
+  line-height: 250%;
 }
 
 .subtext a {
